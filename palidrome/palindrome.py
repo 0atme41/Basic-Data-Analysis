@@ -20,10 +20,8 @@ anagrams_by_sig = {sig: wordset for sig, wordset in words_by_sig.items() if len(
 pairs = []
 
 for wordset in anagrams_by_sig.values():
-    for word1 in wordset:
-        for word2 in wordset:
-            # consider only sorted pairs to avoid duplicate matches
-            if word1 >= word2 and word1[::-1] == word2:
-                pairs.append((word1, word2))
+    for word1, word2 in itertools.combinations(wordset, 2):
+        if (word1[::-1] == word2):
+            pairs.append((word1, word2))
 
 print(pairs)
