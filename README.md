@@ -9,3 +9,10 @@
 - uses numpy, matplotlib, and custom data cleaning methods
 
 ![sample output](https://github.com/0atme41/Basic-Data-Analysis/blob/main/weather_anomalies/output.png?raw=true)
+
+# unisex baby names
+- returns a plot of the popularity of the 10 most popular unisex baby names over time
+- includes a script that takes a zip file of text files from every available year and concatanates it into one csv
+- utilizes pandas to sort, clean, and observe interesting trends in data
+
+![sample output](https://github.com/0atme41/Basic-Data-Analysis/blob/main/unisex_baby_names/output.png?raw=true)
