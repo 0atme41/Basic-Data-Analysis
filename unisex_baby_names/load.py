@@ -1,8 +1,9 @@
-import math
-import collections
-import numpy as np
+'''
+takes a zip file containing text files for every available year of baby names
+and concatanates them all into a single csv
+'''
+
 import pandas as pd
-import matplotlib as pp
 import zipfile
 
 zipfile.ZipFile("names.zip").extractall(".")
