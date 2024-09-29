@@ -6,3 +6,6 @@
 - returns a plot of the weather anomalies over time of a specific city (Seattle in example)
   - the weather anomaly of a given year is defined as the half of the sum of the average minimum temperature and the average maximum temperature
 - can be generalized to return the weather anomalies of any city
+- uses numpy, matplotlib, and custom data cleaning methods
+
+![sample output](https://github.com/0atme41/Basic-Data-Analysis/blob/main/weather_anomalies/output.png?raw=true)
