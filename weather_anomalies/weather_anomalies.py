@@ -35,12 +35,11 @@ for year in allyears:
 
 # calculates the mid century averge temperatur
 midCenAvg = np.mean([findAvgTemp(year) for year in range(1945, 1956)])
-print(midCenAvg)
 
 # calculates the temperature anomaly per year
 anomalies = np.array([findAvgTemp(year) - midCenAvg for year in availableYears])
-print(anomalies)
 
+# plots information
 pp.plot(availableYears, smooth(anomalies, 5))
 pp.xlabel("Year")
 pp.ylabel("Temperature Anomaly")
